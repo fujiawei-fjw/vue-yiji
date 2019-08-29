@@ -5,6 +5,8 @@ import Yindao from "./components/Yindao.vue";
 import Tuijian from "./components/Tuijian.vue";
 import Fabu from "./components/Fabu.vue";
 import Geren from "./components/Geren.vue";
+// import PUBLICURL from "../constants";
+
 Vue.use(VueRouter);
 export default new VueRouter({
   routes: [
@@ -29,5 +31,5 @@ export default new VueRouter({
       component: Geren
     }
   ],
-  mode: "history"
+  mode: "hash"
 });

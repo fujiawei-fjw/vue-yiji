@@ -33,31 +33,26 @@
                 </el-col>
               </el-row>-->
               <el-row type="flex" justify="center" class="zhanghu">
-                <el-col :span="5">
-                  <el-form-item label prop="name">
-                    <el-input v-model="form.name" size="small" placeholder="请输入帐号/手机号"></el-input>
-                  </el-form-item>
-                </el-col>
+                <el-form-item label prop="name">
+                  <el-input v-model="form.name" size="small" placeholder="请输入帐号/手机号"></el-input>
+                </el-form-item>
               </el-row>
               <el-row type="flex" justify="center" class="mima">
-                <el-col :span="5">
-                  <el-form-item label prop="password">
-                    <el-input
-                      type="password"
-                      v-model="form.password"
-                      size="small"
-                      placeholder="请输入密码"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
+                <el-form-item label prop="password">
+                  <el-input
+                    type="password"
+                    v-model="form.password"
+                    size="small"
+                    placeholder="请输入密码"
+                  ></el-input>
+                </el-form-item>
               </el-row>
               <el-row type="flex" justify="center" class="dl">
-                <el-col :span="5">
-                  <el-form-item>
-                    <el-button type="primary" @click="submit"></el-button>
-                    <!-- <el-button @click="register">注册</el-button> -->
-                  </el-form-item>
-                </el-col>
+                <el-form-item>
+                  <div @click="submit" class="denglu-dl"></div>
+                  <!-- <el-button type="primary"></el-button> -->
+                  <!-- <el-button @click="register">注册</el-button> -->
+                </el-form-item>
               </el-row>
             </el-form>
           </div>
@@ -153,19 +148,25 @@ export default {
 .firstdemo .zhanghu {
   position: absolute;
   /* left: 0.1rem; */
-  top: 4.2rem;
+  top: 4.7rem;
   /* width: 2rem; */
 }
 .firstdemo .mima {
   position: absolute;
   /* left: 0.1rem; */
-  top: 5.2rem;
+  top: 5.7rem;
   /* width: 2rem; */
 }
 .firstdemo .dl {
+  /* background-color: red; */
   position: absolute;
-  left: 0.1rem;
-  top: 6.4rem;
+  /* left: 1.8rem; */
+  top: 7.2rem;
+}
+.firstdemo .dl .denglu-dl {
+  /* background-color: red; */
+  width: 0.8rem;
+  height: 0.6rem;
 }
 .firstdemo .dl button span {
   display: block;
